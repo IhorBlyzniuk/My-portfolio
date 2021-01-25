@@ -1,0 +1,34 @@
+.promo{
+    height: 100vh;
+    background: url(../img/main_bg.jpg) 50%/cover no-repeat;
+    padding: 206px 0;
+    &__title{
+        width: 505px;
+        margin-top: 10px;
+    }
+    &__subtitle{
+        @include circle;
+        position: relative;
+        z-index: 2;
+        padding-left: 10px;
+    }
+    &__buttons{
+        margin-top: 25px;
+    }
+    &__btn{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 12px 25px;
+        color: #000;
+        border-radius: 3px;
+        &:hover{
+            color: #000;
+            text-decoration: none;
+        }
+        &_orange{
+            background:#1E90FF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        } 
+    }
+}
