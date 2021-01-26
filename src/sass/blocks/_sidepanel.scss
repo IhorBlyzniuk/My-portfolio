@@ -8,10 +8,12 @@
     align-items: center;
     height: 340px;
     z-index: 3;
-    &__icon{
-        width: 20px;
-        height: 20px;
-        transform: rotate(-90deg);
+    &__link{
+        &:hover{
+            svg path{
+                box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.76);
+            }
+        }
     }
     &__divider {
         width: 2px;

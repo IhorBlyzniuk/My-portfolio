@@ -12,9 +12,17 @@
     width: 1140px;
     margin: 0 auto;
 }
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #1E90FF;
+    margin-top: 25px;
+}
 
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/titles';
 @import 'blocks/promo';
 @import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/about';
