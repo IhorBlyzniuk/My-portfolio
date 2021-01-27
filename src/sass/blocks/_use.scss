@@ -1,0 +1,42 @@
+.use{
+    padding-top: 130px;
+    &__subtitle{
+        position: relative;
+        text-align: center;
+        @include circle; 
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title{
+        text-align: center;
+    }
+    .divider{
+        margin: 25px auto 0;
+    }
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 13px;
+    }
+    &__item{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: 1px solid #000000;
+        &-title{
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-descr{
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+}

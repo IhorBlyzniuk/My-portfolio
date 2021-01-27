@@ -1,0 +1,109 @@
+.education{
+    padding-top: 125px;
+
+    &__subtitle{
+        position: relative;
+        text-align: center;
+        @include circle;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title{
+        text-align: center;
+    }
+    .divider{
+       margin: 25px auto 60px; 
+    }
+    &__wrapper{
+        margin: 0 65px 0;
+        display: grid;
+        grid-template-columns: 425px 425px;
+        gap: 136px;
+    }
+    &__column{
+        ul{
+            list-style-type: none;
+            li{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: -7px;
+                    left: 0;
+                    width: 1px;
+                    height: 100%;
+                    background-color: #000;
+                }
+            }
+        }
+        &-title{
+            padding-left: 35px;
+            font-size: 20px;
+            line-height: 30px;
+            position: relative;
+            &::before{
+                
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -7px;
+                background-color: #1E90FF;
+
+            }
+        }
+    }
+    &__item{
+        padding-top: 45px;
+        &::before{
+            position: absolute;
+            top: 56px;
+            left: 0;
+            content: '';
+            width: 42px;
+            height: 1px;
+            background-color: #000;
+        }
+        &-head{
+            padding-left: 99px;
+        }
+        &-circle{
+            position: absolute;
+            top: 53px;
+            left: 55px;
+            
+        }
+        &-icon{
+            position: relative;
+            @include circle;
+            &::before{
+                top: -13px;
+                left: -13px;
+            }
+        }
+        &-title{
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-location{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+        &-content{
+            padding-left: 43px;
+            padding-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            
+            color: #000000;
+        }
+    }
+}
