@@ -1,0 +1,80 @@
+@mixin heading {
+    font-family: $secondaryFont;
+    font-size: 50px;
+    line-height: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 24px;
+    position: relative;
+    
+    &::before {
+        content: "\0020";
+        display: block;
+        height: 1px;
+        background: $black;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+    }
+}
+
+@mixin btn {
+    font-size: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    text-decoration: none;
+    colour: #000;
+    width: 196px;
+    height: 56px;
+
+}
+
+@mixin yearMix {
+    opacity: 0.65;
+    color: #000000;
+    font-family: $primaryFont;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24.27px;
+    text-transform: uppercase;
+}
+
+@mixin nameMix {
+    color: #000000;
+    font-family: $primaryFont;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+@mixin captionMix {
+    color: #000000;
+    font-family: $primaryFont;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.41px;
+}
+
+@mixin articleMix {
+    color: #acacac;
+    font-family: $primaryFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;    
+}
+
+@mixin descriptionMix {
+    color: #798285;
+    font-family: $primaryFont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.65px;
+}

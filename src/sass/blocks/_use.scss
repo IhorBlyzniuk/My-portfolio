@@ -39,4 +39,40 @@
             font-size: 12px;
         }
     }
+    &__rating{
+        margin-top: 120px;
+        display: grid;
+        grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 35px;
+        &-item{
+            display: grid;
+            grid-template: minmax(21px, auto) 14px / 200px 35px;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        &-text{
+            position: relative;
+            padding: 2px 0 0 13px;
+
+            @include circle;
+        }
+        &-counter{
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-line{
+            width: 350px;
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            grid-column: 1 / 3;
+            span {
+                display: block;
+                height: 100%;
+                background-color: #1E90FF;
+                border-radius: 4px;
+            }
+        }
+    }
 }
