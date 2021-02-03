@@ -1,0 +1,280 @@
+@media (max-width: 1340px){
+    .sidepanel{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .promo{
+        &__title{
+            font-size: 36px;
+            line-height: 50px;
+        }
+    }
+    .about{
+        &__wrapper{
+            grid-template-columns: 400px 520px;
+            column-gap: 50px;
+        }
+        &__skills{
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,225px);
+            &-item{
+                grid-template-columns: 40px 165px;
+            }
+        }
+    }
+    .education{
+        &__wrapper{
+            grid-template-columns: 325px 325px;
+            gap: 70px;
+        }
+        &__title{
+            font-size: 40px;
+        }
+    }
+    .use{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-around;
+        }
+        &__rating {
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-around;
+            padding: 0 30px;
+        }
+    }
+    .portfolio{
+        &__wrapper{
+          grid-template-columns: repeat(auto-fit, 280px);
+          grid-auto-rows: 280px;
+          row-gap: 25px;
+          justify-content: space-around;  
+        }
+        &__item{
+            &_horizontal{
+                grid-row: unset;
+                grid-column: unset;
+            }
+            &_vertical{
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts{
+        &__wrapper{
+            grid-template-columns: 340px 575px;
+            padding: 0;
+        }
+    }
+    
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+    .promo__title{
+        width: 322px;
+        font-size: 29px;
+        line-height: 38px;
+    }
+    .promo__btn{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .about{
+        &__wrapper{
+            grid-template-columns: 300px 380px;
+        }
+        &__title{
+            font-size: 40px;
+        }
+        &__skills{
+            grid-template-columns: 360px;
+            &-item{
+                grid-template-columns: 40px 300px;
+            }
+        }
+    }
+    .education{
+        &__wrapper{
+            grid-template-columns: 260px 260px;
+            gap: 20px;
+        }
+    }
+    .use{
+        &__rating {
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: space-between;
+            padding: 0;
+            column-gap: 0;
+            &-line {
+                width: 100%;
+            }
+        }
+    }
+    .contacts{
+        &__photo{
+            display: none;
+        }
+        &__wrapper{
+            display: block;
+        }
+        &__form{
+            grid-template: 45px 190px 45px / repeat(2, 1fr);
+            column-gap: 25px;
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+    
+    .promo{
+        background: url(../img/main_bg.jpg) 40%/cover no-repeat;
+        &__title{
+            width: 278px;
+            font-size: 26px;
+            line-height: 30px;
+            color: #fff;
+        }
+        &__btn {
+            font-size: 10px;
+            padding: 8px 16px;
+            color: #fff;
+        }
+        &__subtitle{
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+    .about{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template: 340px auto auto/ 1fr;
+        }
+        &__photo{
+            grid-row: unset;
+        }
+    }
+    .education{
+        padding-top: 75px;
+        &__wrapper{
+            display: block;
+        }
+        &__column{
+            margin-bottom: 40px;
+        }
+    }
+    .use{
+        &__wrapper{
+            padding: 0;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__rating {
+            grid-template-columns: repeat(auto-fit, 320px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: center;
+            margin-top: 40px;
+            &-line {
+                width: 100%;
+            }
+        }
+        &__title{
+            font-size: 40px;
+        }
+    }
+    .contacts{
+        &__title{
+            font-size: 40px;
+        }
+    }
+
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .hamburger{
+        right: 20px;
+    }
+    .menu{
+        &__block{
+            width: 250px;
+        }
+        &__list{
+            padding-left: 20px; 
+        }
+    }
+    .about{
+        &__skills{
+            grid-template-columns: 340px;
+            &-item{
+                grid-template-columns: 40px 275px;
+            }
+        }
+    }
+    .use{
+        &__wrapper {
+            margin-top: 20px;
+        }
+        &__rating {
+            grid-template-columns: repeat(auto-fit,300px);
+        }
+    }
+    .portfolio{
+        padding-top: 40px;
+    }
+    .education{
+        &__wrapper{
+            margin: 0px 15px 0;
+        }
+    }
+    .contacts{
+        &__form{
+            grid-template: 45px 45px 150px 45px / 1fr;
+        }
+        &__textarea{
+            grid-column: unset;
+        }
+        &__triggers{
+            grid-column: unset;
+            display: block;
+        }
+        &__policy{
+            padding-top: 15px;
+        }
+    }
+    
+
+}
+@media (max-width: 320px) {
+    .about{
+        &__skills{
+            grid-template-columns: 260px;
+            &-item{
+                grid-template-columns: 35px 205px;
+            }
+        }
+        &__title{
+            font-size: 35px;
+            line-height: 44px;
+        }
+    }
+    .use{
+        &__wrapper{
+            padding: 0 10px;
+        }
+    }
+}
