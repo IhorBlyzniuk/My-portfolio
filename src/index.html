@@ -3,6 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/fav-icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/fav-icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/fav-icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/fav-icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/fav-icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/fav-icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/fav-icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/fav-icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/fav-icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/fav-icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/fav-icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/fav-icon/favicon-16x16.png">
+    <link rel="manifest" href="icons/fav-icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/fav-icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <title>My portfolio</title>
@@ -75,7 +92,11 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo animate__animated wow animate__fadeInLeft">
-                    <img src="img/about_img.jpg" alt="#">
+                    <picture>
+                        <source media="(min-width: 577px)" srcset="img/about_img.jpg">
+                        <source media="(max-width: 576px)" srcset="img/about_img-mobile.jpg">
+                        <img src="img/about_img.jpg" alt="#">
+                    </picture>
                 </div>
                 <div class="about__content animate__animated wow animate__fadeInUp">
                     <div class="about__subtitle subtitle">Про меня</div>
@@ -318,8 +339,8 @@
                 <a href="#" class="portfolio__item"><img src="img/mogo1.jpg" alt=""></a>
                 <a href="/active_box" class="portfolio__item"><img src="img/active_box.jpg" alt=""></a>
                 <a href="/wordpress" class="portfolio__item"><img src="img/wordpress.jpg" alt=""></a>
-                <a href="/pulse" class="portfolio__item portfolio__item_vertical"><img src="img/pulse2.png" alt=""></a>
-                <a href="#" class="portfolio__item"><img src="img/musician1.png" alt=""></a>
+                <a href="/pulse" class="portfolio__item portfolio__item_vertical"><img src="img/pulse2.jpg" alt=""></a>
+                <a href="#" class="portfolio__item"><img src="img/musician1.jpg" alt=""></a>
                 <a href="/uber" class="portfolio__item portfolio__item_horizontal"><img src="img/uber.jpg" alt=""></a>
             </div>
         </div>
@@ -341,7 +362,7 @@
                         <a target="_blank". href="https://instagram.com/ihorblyzniuk?igshid=1iq071ftmeyl0" class="contacts__link"><img src="icons/instagram.svg" alt=""></a>
                     </div>
                     <div class="contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
-                    <form action="php/smart.php" id="contacts" method="post" class="contacts__form">
+                    <form action="#" id="contacts" method="post" class="contacts__form">
                         <div class="contacts__input">
                             <input required maxlength="20" name="name" id="name" type="name">
                             <label for="name">Ваше имя</label>
